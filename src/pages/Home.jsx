@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import ButterPaneer from '../images/Butter Paneer Masla.jpg';
-import MangoSmoothie from '../images/Mango-smoothie.jpg';
+import ChanaMasala from '../images/Chana Masala.jpg';
 import PavBhaji from '../images/Pav Bhaji.jpg';
-import ChanaMasala from '../images/Chana-Masala.jpg';
 import PuranPoli from '../images/Puran Poli.jpg';
-import VegetableBiryani from '../images/Vegetable Biryani.jpg';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -18,12 +15,12 @@ export default function Home() {
 
   useEffect(() => {
     setRecipes([
-      { id: 1, name: "Paneer Butter Masala", image: ButterPaneer, time: "40 min", likes: 0, reviews: [] },
-      { id: 2, name: "Mango Smoothie", image: MangoSmoothie, time: "10 min", likes: 0, reviews: [] },
+      
+      
       { id: 3, name: "Pav Bhaji", image: PavBhaji, time: "35 min", likes: 0, reviews: [] },
       { id: 4, name: "Chana Masala", image: ChanaMasala, time: "30 min", likes: 0, reviews: [] },
       { id: 5, name: "Puran Poli", image: PuranPoli, time: "50 min", likes: 0, reviews: [] },
-      { id: 6, name: "Vegetable Biryani", image: VegetableBiryani, time: "60 min", likes: 0, reviews: [] },
+    
     ]);
   }, []);
 
